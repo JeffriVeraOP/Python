@@ -1,4 +1,4 @@
-#Empezaremos a construir una calculadora de variacion de elo multiple
+#Calculadora de variacion de elo multiple
 
 your_elo = int(input("Ingrese aqui su elo: "))
 your_k = int(input("Ingrese su k actual: "))
