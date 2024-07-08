@@ -1,6 +1,5 @@
-i = 1
-while i < 5:
+i = 111
+for i in range(2, 1):
     print(i)
-    i += 1
 else:
     print("else:", i)
