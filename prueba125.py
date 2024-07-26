@@ -8,14 +8,12 @@ Sugerencia: intenta dividir el argumento por todos los valores posteriores (come
 Si necesitas conocer la raíz cuadrada de cualquier valor, puedes utilizar el operador **. Recuerda: la raíz cuadrada de x es lo mismo que x0.5.'''
 
 def is_prime(num):
-    list_num = []
-    for n in range(2, num):
-        list_num.append(n)
-    for x in list_num:
-        if num % x != 0:
-            return True
-        else:
+    if num < 2:
+        return False
+    for n in range(2, int(num ** 0.5) + 1): # or range(2, num):
+        if num % n == 0:
             return False
+    return True
 
 for i in range(1, 20):
     if is_prime(i + 1):
